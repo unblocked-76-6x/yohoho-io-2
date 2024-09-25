@@ -1,0 +1,471 @@
+
+<!doctype html>
+<html>
+   <head>
+
+<script type="f1c29eb949e9ae4c01e32900-text/javascript">
+	window.aiptag = window.aiptag || {cmd: []};
+	aiptag.cmd.display = aiptag.cmd.display || [];
+	aiptag.cmd.player = aiptag.cmd.player || [];
+	//CMP tool settings
+	aiptag.cmp = {
+		show: true,
+		position: "centered",  //centered, bottom
+		button: true,
+		buttonText: "Privacy settings",
+		buttonPosition: "bottom-left" //bottom-left, bottom-right, bottom-center, top-left, top-right
+	}
+	aiptag.cmd.player.push(function() {
+		aiptag.adplayer = new aipPlayer({
+			AD_WIDTH: 960,
+			AD_HEIGHT: 540,
+			AD_DISPLAY: 'center', //default, fullscreen, fill, center, modal-center
+			LOADING_TEXT: 'loading advertisement',
+			PREROLL_ELEM: function(){return document.getElementById('videoad')},
+			AIP_COMPLETE: function (state)  {
+				/*******************
+				 ***** WARNING *****
+				 *******************
+				 Please do not remove the PREROLL_ELEM
+				 from the page, it will be hidden automaticly.
+				*/
+				window.location.href = "";
+				//alert("Video Ad Completed: " + state);
+			}
+		});
+
+			});
+
+		function show_videoad() {
+		//check if the adslib is loaded correctly or blocked by adblockers etc.
+		if (typeof aiptag.adplayer !== 'undefined') {
+			aiptag.cmd.player.push(function() { aiptag.adplayer.startVideoAd(); });
+		} else {
+			//Adlib didnt load this could be due to an adblocker, timeout etc.
+			//Please add your script here that starts the content, this usually is the same script as added in AIP_COMPLETE.
+			window.location.href = "";
+			alert("Ad Could not be loaded, load your content here");
+			aiptag.adplayer.aipConfig.AIP_COMPLETE();
+			
+		}
+	}
+		</script>
+	<script async src="//api.adinplay.com/libs/aiptag/pub/AGV/play-unblocked.github.io/tag.min.js" type="f1c29eb949e9ae4c01e32900-text/javascript"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<title>Play Yohoho.io</title>
+	<META NAME="ROBOTS" CONTENT="noindex,follow">		<meta property="og:image" content="files/image/yohoho-io.png" />
+	<meta property="image" content="files/image/yohoho-io.png" />
+	<link rel="image_src" href="files/image/yohoho-io.png" />
+		<link rel="canonical" href="https://lesson1.guru/go/yohoho-io.html" />
+	<script language="javascript" type="f1c29eb949e9ae4c01e32900-text/javascript">
+	function swf(e,t,a){document.write('<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="'+t+'" height="'+a+'">'),document.write('<param name="movie" value="'+e+'">'),document.write('<param name="wmode" value="transparent" />'),document.write('<param name="quality" value="high">'),document.write('<param name="allownetworking" value="internal" />'),document.write('<param name="allowscriptaccess" value="samedomain" />'),document.write('<embed src="'+e+'" allownetworking="internal" allowscriptaccess="samedomain" scale="exactfit" swliveconnect="false"  id="currentEmbedGame" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="'+t+'" height="'+a+'" menu="0"></embed>'),document.write("</object>")}function dcr(e,t,a){document.write('<object classid="clsid:166B1BCA-3F9C-11CF-8075-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/director/sw.cab#version=7,0,2,0" width="'+t+'" height="'+a+'">'),document.write("<param name=\"swRemote\" value=\"swSaveEnabled='true' swVolume='true' swRestart='true' swPausePlay='true' swFastForward='true' swContextMenu='true'\">"),document.write('<param name="swStretchStyle" value="meet">'),document.write('<param name="bgColor" value="#000000">'),document.write('<param name="src" value="'+e+'">'),document.write('<embed src="'+e+'" width="'+t+'" height="'+a+"\" bgColor=\"#000000\" swRemote=\"swSaveEnabled='true' swVolume='true' swRestart='true' swPausePlay='true' swFastForward='true' swContextMenu='true'\" swStretchStyle=\"meet\" type=\"application/x-director\" pluginspage=\"http://www.macromedia.com/shockwave/download/\"></embed>"),document.write("</object>")}function indir(e){jQuery.ajax({type:"POST",url:"https://lesson1.guru/index.php?act=islem&indir="+e,data:e,success:function(e){$("#indir").html(e)}})}function yeniler(e){jQuery.ajax({type:"POST",url:"https://lesson1.guru/index.php?act=script&yeniler&sayfa="+e,data:e,success:function(e){$("#yeniler").html(e)}})}function populer(e){jQuery.ajax({type:"POST",url:"https://lesson1.guru/index.php?act=script&pop&pop="+e,data:e,success:function(e){$("#populer").html(e)}})}function yorumsayfala(e,t,a){jQuery.ajax({type:"POST",url:"https://lesson1.guru/index.php?act=script&yorum",data:"oyunid="+e+"&sayfa="+t+"&sclass="+a,success:function(e){$("#yorumlar").html(e)}})}function begen(e,t){jQuery.ajax({type:"POST",url:"https://lesson1.guru/index.php?act=script&begen="+e+"&durum="+t,data:e,success:function(e){"error"==e||$("#starz").html(e)}})}
+	</script>
+	<!-- Meta, title, CSS, JS, favicons, etc. -->
+    <!-- Default link -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://lesson1.guru/assets/css/custom.css?1727277522" rel="stylesheet" type="text/css" />
+    <link href="https://lesson1.guru/assets/css/responsive.css?1727277522" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://lesson1.guru/assets/js/html5shiv.min.js"></script>
+      <script src="https://lesson1.guru/assets/js/respond.min.js"></script>
+      
+    <![endif]-->
+	<script src="https://code.jquery.com/jquery-3.4.1.js" type="f1c29eb949e9ae4c01e32900-text/javascript"></script>
+	<script type="f1c29eb949e9ae4c01e32900-text/javascript">
+function swf(e, a, t) {
+	document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="https://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="'+ a +'" height="'+ t +'" id="flash-content" align="middle" class="item-direct-container resizable">')
+    document.write('<param name="allowScriptAccess" value="never">')
+    document.write('<param name="movie" value="'+ e + '">')
+    document.write('<param name="quality" value="high">')
+    document.write('<param name="wmode" value="direct">')
+    document.write('<param name="allowfullscreen" value="false">')
+    document.write('<param name="allowfullscreeninteractive" value="false">')
+    document.write('<param name="fullScreenAspectRatio" value="">')
+    document.write('<param name="quality" value="">')
+    document.write('<param name="play" value="true">')
+    document.write('<param name="loop" value="true">')
+    document.write('<param name="menu" value="">')
+    document.write('<param name="hasPriority" value="true">')
+	document.write('<embed src="' + e +'" class="item-direct-container resizable" width="' + a + '" height="' + t + '" id="gamefileEmbed" name="flash-content" align="middle" wmode="direct" allowfullscreen="false" allowfullscreeninteractive="false" fullscreenaspectratio="" quality="high" play="true" loop="true" menu="" allowscriptaccess="never" haspriority="true" type="application/x-shockwave-flash" pluginspage="https://www.adobe.com/go/getflashplayer">')
+	document.write('</object>')
+}
+function dcr(e, a, t) {
+    document.write('<object classid="clsid:166B1BCA-3F9C-11CF-8075-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/director/sw.cab#version=7,0,2,0" width="' + a + '" height="' + t + '">'), document.write("<param name=\"swRemote\" value=\"swSaveEnabled='true' swVolume='true' swRestart='true' swPausePlay='true' swFastForward='true' swContextMenu='true'\">"), document.write('<param name="swStretchStyle" value="meet">'), document.write('<param name="bgColor" value="#000000">'), document.write('<param name="src" value="' + e + '">'), document.write('<embed src="' + e + '" width="' + a + '" height="' + t + "\" bgColor=\"#000000\" swRemote=\"swSaveEnabled='true' swVolume='true' swRestart='true' swPausePlay='true' swFastForward='true' swContextMenu='true'\" swStretchStyle=\"meet\" type=\"application/x-director\" pluginspage=\"http://www.macromedia.com/shockwave/download/\"></embed>"), document.write("</object>")
+}
+function begen(b, a) {
+        jQuery.ajax({
+            type: "POST",
+            url: "https://lesson1.guru/i/vote?begen=" + b + "&durum=" + a,
+            data: b,
+            success: function(c) {
+				if(c=="error"){
+					alert("Opps! Already voted.");
+					
+				} else {
+					$("#voteresults").html(c);
+				}
+            }
+        })
+}
+</script>
+<script type="application/ld+json">
+[
+	{
+		"@context": "http://schema.org",
+		"@type": "WebSite",
+		"name" : "https://lesson1.guru",
+		"url": "https://lesson1.guru",
+		"potentialAction": {
+			"@type": "SearchAction",
+			"target": "https://lesson1.guru/search/{search_term_string}",
+			"query-input": "required name=search_term_string"
+		},
+		"publisher": {
+			"@type": "Organization",
+			"name" : "https://lesson1.guru",
+			"url": "https://lesson1.guru",
+			"logo": {
+				"@type": "ImageObject",
+				"url": "https://lesson1.guru/assets/images/logo.png",
+				"width": 158,
+				"height": 53
+			}
+		}
+	}
+
+	,{
+		"@context": "http://schema.org",
+		"@type": "SoftwareApplication",
+		"dateCreated": "2024-06-13T15:27:34",
+		"datePublished": "2024-06-13T15:27:34",
+		"dateModified": "2024-06-13T15:27:34",
+		"url": "https://lesson1.guru/yohoho-io.html",
+		"applicationCategory": "IO Games",
+		"operatingSystem": "Windows, OSX, Linux",
+		"name": "Yohoho.io",
+		"description": "<p><strong>YoHoHo.io</strong> is a pirate battle royale game where players marooned on a tropical island fight to be the last one alive. Players collect doubloons to grow bigger and kill other players to steal their loot. The game offers different islands and pets with various upgrade options.</p>
+",
+	
+	
+	
+		"aggregateRating": {
+			"@type": "http://schema.org/AggregateRating",
+			"ratingValue": 4.51,
+			"ratingCount": 51,
+			"worstRating": 1,
+			"bestRating": 5
+		},
+		"offers": {
+			"@type": "http://schema.org/Offer",
+			"price": "0",
+			"priceCurrency": "usd",
+			"availability": "http://schema.org/InStock"
+		},
+		"screenshot": [
+			
+		]
+	},
+	{
+		"@context": "http://schema.org",
+		"@type": "BreadcrumbList",
+		"itemListElement": [
+	
+	
+		
+		{
+			"@type": "http://schema.org/ListItem",
+			"position": 1,
+			"item": {
+				"@type": "http://schema.org/Thing",
+				"name": "IO Games",
+				"id": "https://lesson1.guru/io-games"
+			}
+		},
+		
+		{
+			"@type": "http://schema.org/ListItem",
+			"position": 2,
+			"item": {
+				"@type": "http://schema.org/Thing",
+				"name": "Yohoho.io",
+                                "id": "IO Games",
+				"url": "https://lesson1.guru/yohoho-io.html",
+				"image": "files/image/yohoho-io.png"
+			}
+		}]
+	}
+]
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7667920842875714" crossorigin="anonymous" type="f1c29eb949e9ae4c01e32900-text/javascript"></script> 
+   
+</head>
+
+<body>
+<div id="videoad"></div>
+<header> 
+	<div class="container"> 
+		<div class="row"> 
+			<div class="col-3"> 
+				<a class="logo" href="https://lesson1.guru"><img src="https://lesson1.guru/assets/images/logo.png" alt="" /></a>
+			</div>
+			<div class="col-4">
+				<h1 class="title-h1">PLAY FREE GAMES</h1>
+			</div>
+			<div class="col-5 text-right">	   
+				<form class="header-search"  action="https://lesson1.guru" autocomplete="off" method="GET">
+					<input name="act" value="ara" type="hidden" />
+					<input name="term" type="text" class="search-game" placeholder="Search for games" />
+					<button class="btn-search"></button>
+					<ul class="game-results"></ul>
+				</form>
+			</div>
+		</div>
+	</div>
+</header>
+
+	       <div class="container slim-con">
+<div class="row pt-3">
+<center>
+<div id='play-unblocked-github-io_970x250'>
+		<script type="f1c29eb949e9ae4c01e32900-text/javascript">
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('play-unblocked-github-io_970x250'); });
+		</script>
+	</div>
+
+</center>
+        <div class="center-side bg-white w-100">
+			<div class="game-bar"> 
+				<div class="row"> 
+					<div class="col-5"><h4><i class="fas fa-gamepad"></i> Yohoho.io</h4></div>
+					<div class="col-7">
+					<ul class="tools text-right"> 
+						<span id="voteresults"> 
+						<li><a href="javascript:;" rel="nofollow" onclick="if (!window.__cfRLUnblockHandlers) return false; begen('8','1')" data-cf-modified-f1c29eb949e9ae4c01e32900-=""><i class="fas fa-thumbs-up"></i> Like (46)</a></li>
+						<li><a href="javascript:;" rel="nofollow" onclick="if (!window.__cfRLUnblockHandlers) return false; begen('8','2')" data-cf-modified-f1c29eb949e9ae4c01e32900-=""><i class="fas fa-thumbs-down"></i>  Dislike (5)</a></li>
+						</span>
+						 
+						<li><a href="javascript:void();" class="full"><i class="fas fa-compress"></i> Full Screen</a></li>
+					</ul>
+					</div>
+				 </div>
+			</div>
+
+            <div class="game-play" id="gamewindow">
+			<div class="cls"><i class="far fa-times-circle"></i></div>
+                  <div class="video_area" style="width:auto;    height:auto; "><center><iframe class='game-iframe filtre' id='game-area' src='https://yohoho.cfd/index1.html' width='800' height='600' scrolling='none' frameborder='0' allowfullscreen=''></iframe>				
+            </div>
+			  </div>
+			<div class="row"> 
+			 <div class="col-12 mt-5 pl-5 text-center">
+				<h2>Similar Games</h2>
+				<div class="game-items dp-inline text-center small-thumbs">
+					
+				<a class="game-tile"  href="https://lesson1.guru/real-football-challenge.html" title="Real football challenge" data-title="Real football challenge">
+						<span>Real football challenge</span>
+						<img src="https://lesson1.guru/files/image/real-football-challenge.png" alt="Real football challenge" width="300" height="100" />
+						</a>
+			
+				<a class="game-tile"  href="https://lesson1.guru/fruit-ninja.html" title="Fruit Ninja" data-title="Fruit Ninja">
+						<span>Fruit Ninja</span>
+						<img src="https://lesson1.guru/files/image/fruit-ninja.png" alt="Fruit Ninja" width="300" height="100" />
+						</a>
+			
+				<a class="game-tile"  href="https://lesson1.guru/just-fall-lol.html" title="Just Fall LOL" data-title="Just Fall LOL">
+						<span>Just Fall LOL</span>
+						<img src="https://lesson1.guru/files/image/just-fall-lol.png" alt="Just Fall LOL" width="300" height="100" />
+						</a>
+			
+				<a class="game-tile"  href="https://lesson1.guru/red-ball-6-bounce-ball.html" title="Red ball 6 bounce ball" data-title="Red ball 6 bounce ball">
+						<span>Red ball 6 bounce ball</span>
+						<img src="https://lesson1.guru/files/image/red-ball-6-bounce-ball.png" alt="Red ball 6 bounce ball" width="300" height="100" />
+						</a>
+			
+				<a class="game-tile"  href="https://lesson1.guru/cookie-clicker.html" title="Cookie Clicker" data-title="Cookie Clicker">
+						<span>Cookie Clicker</span>
+						<img src="https://lesson1.guru/files/image/cookie-clicker.png" alt="Cookie Clicker" width="300" height="100" />
+						</a>
+			
+				<a class="game-tile"  href="https://lesson1.guru/hole-io.html" title="Hole.io" data-title="Hole.io">
+						<span>Hole.io</span>
+						<img src="https://lesson1.guru/files/image/hole-io.png" alt="Hole.io" width="300" height="100" />
+						</a>
+			
+				<a class="game-tile"  href="https://lesson1.guru/basketball-stars.html" title="Basketball stars" data-title="Basketball stars">
+						<span>Basketball stars</span>
+						<img src="https://lesson1.guru/files/image/basketball-stars.png" alt="Basketball stars" width="300" height="100" />
+						</a>
+			
+				<a class="game-tile"  href="https://lesson1.guru/yohoho-io.html" title="Yohoho.io" data-title="Yohoho.io">
+						<span>Yohoho.io</span>
+						<img src="https://lesson1.guru/files/image/yohoho-io.png" alt="Yohoho.io" width="300" height="100" />
+						</a>
+			
+				<a class="game-tile"  href="https://lesson1.guru/stick-defenders.html" title="Stick Defenders" data-title="Stick Defenders">
+						<span>Stick Defenders</span>
+						<img src="https://lesson1.guru/files/image/stick-defenders.png" alt="Stick Defenders" width="300" height="100" />
+						</a>
+			
+				<a class="game-tile"  href="https://lesson1.guru/madalin-stunt-cars-2.html" title="madalin stunt cars 2" data-title="madalin stunt cars 2">
+						<span>madalin stunt cars 2</span>
+						<img src="https://lesson1.guru/files/image/madalin-stunt-cars-2.png" alt="madalin stunt cars 2" width="300" height="100" />
+						</a>
+			
+				<a class="game-tile"  href="https://lesson1.guru/paper-io.html" title="Paper.io" data-title="Paper.io">
+						<span>Paper.io</span>
+						<img src="https://lesson1.guru/files/image/paper-io.png" alt="Paper.io" width="300" height="100" />
+						</a>
+			
+				<a class="game-tile"  href="https://lesson1.guru/retro-bowl.html" title="Retro Bowl" data-title="Retro Bowl">
+						<span>Retro Bowl</span>
+						<img src="https://lesson1.guru/files/image/retro-bowl_2.jpg" alt="Retro Bowl" width="300" height="100" />
+						</a>
+							</div>
+			</div>
+			</div>
+			<div class="row"> 
+				  <div class="col-12 mt-5 pl-5">
+                    <h2>
+                        Related Categories
+                    </h2>
+                    <a class="cat-item" href="https://lesson1.guru/2-player-games" title="2 Player Games"><img src="https://retrobowl.blog/image/kategori/ikon/2-player_5e297c3ac2b2a.jpg" alt="" />2 Player Games</a><a class="cat-item" href="https://lesson1.guru/action-games" title="Action Games"><img src="https://retrobowl.blog/image/kategori/ikon/action-games_5e298d9c94e18.png" alt="" />Action Games</a><a class="cat-item" href="https://lesson1.guru/adventure-games" title="Adventure Games"><img src="https://retrobowl.blog/image/kategori/ikon/adventure-games_5e299450295a3.png" alt="" />Adventure Games</a><a class="cat-item" href="https://lesson1.guru/animal-games" title="Animal Games"><img src="https://retrobowl.blog/image/kategori/ikon/animal-games_5e2999f77a16e.jpg" alt="" />Animal Games</a><a class="cat-item" href="https://lesson1.guru/arcade-games" title="Arcade Games"><img src="https://retrobowl.blog/image/kategori/ikon/arcade-games_5e29a74cd0b4d.jpg" alt="" />Arcade Games</a><a class="cat-item" href="https://lesson1.guru/board-games" title="Board Games"><img src="https://retrobowl.blog/image/kategori/ikon/board-games_5e29a1f03b2d1.jpg" alt="" />Board Games</a><a class="cat-item" href="https://lesson1.guru/car-games" title="Car Games"><img src="https://retrobowl.blog/image/kategori/ikon/car-games_5e29a954d8a91.png" alt="" />Car Games</a><a class="cat-item" href="https://lesson1.guru/card-games" title="Card Games"><img src="https://retrobowl.blog/image/kategori/ikon/card-games_5e29aae231ef8.png" alt="" />Card Games</a><a class="cat-item" href="https://lesson1.guru/cooking-food-games" title="Cooking & Food Games"><img src="https://retrobowl.blog/image/kategori/ikon/cooking-food-games_5e29aea14c3ee.jpg" alt="" />Cooking & Food Games</a><a class="cat-item" href="https://lesson1.guru/fighting-games" title="Fighting Games"><img src="https://retrobowl.blog/image/kategori/ikon/fighting-games_5e29b11c88f43.jpg" alt="" />Fighting Games</a><a class="cat-item" href="https://lesson1.guru/girl-games" title="Girl Games"><img src="https://retrobowl.blog/image/kategori/ikon/girl-games_5e29b3af4001c.png" alt="" />Girl Games</a><a class="cat-item" href="https://lesson1.guru/io-games" title="IO Games"><img src="https://retrobowl.blog/image/kategori/ikon/io-game_5e295be4d44fc.png" alt="" />IO Games</a><a class="cat-item" href="https://lesson1.guru/motorbike-games" title="Motorbike Games"><img src="https://retrobowl.blog/image/kategori/ikon/motorbike-games_5e29bafae51bd.png" alt="" />Motorbike Games</a><a class="cat-item" href="https://lesson1.guru/multiplayer-games" title="Multiplayer Games"><img src="https://retrobowl.blog/image/kategori/ikon/multiplayer-games_5e29bdd2baf3c.jpg" alt="" />Multiplayer Games</a><a class="cat-item" href="https://lesson1.guru/puzzle-games" title="Puzzle Games"><img src="https://retrobowl.blog/image/kategori/ikon/puzzle-games_5e2a20e08bdf8.png" alt="" />Puzzle Games</a><a class="cat-item" href="https://lesson1.guru/racing-games" title="Racing Games"><img src="https://retrobowl.blog/image/kategori/ikon/racing-games_5e2a255155ef5.jpg" alt="" />Racing Games</a><a class="cat-item" href="https://lesson1.guru/shooting-games" title="Shooting Games"><img src="https://retrobowl.blog/image/kategori/ikon/shooting-games_5e2a276bc8e45.png" alt="" />Shooting Games</a><a class="cat-item" href="https://lesson1.guru/sports-games" title="Sports Games"><img src="https://retrobowl.blog/image/kategori/ikon/sports-games_5e2a29b317880.png" alt="" />Sports Games</a><a class="cat-item" href="https://lesson1.guru/strategy-games" title="Strategy Games"><img src="https://retrobowl.blog/image/kategori/ikon/strategy-games_5e2a2c3c959af.png" alt="" />Strategy Games</a><a class="cat-item" href="https://lesson1.guru/war-games" title="War Games"><img src="https://retrobowl.blog/image/kategori/ikon/war-games_5e2a2eba28390.png" alt="" />War Games</a>                </div>
+			</div>
+			<div class="row"> 
+				  <div class="col-12 mt-5 pl-5">
+                    <h2>
+                        Yohoho.io                    </h2>
+                    <article> 
+						<p><strong>YoHoHo.io</strong> is a pirate battle royale game where players marooned on a tropical island fight to be the last one alive. Players collect doubloons to grow bigger and kill other players to steal their loot. The game offers different islands and pets with various upgrade options.</p>
+					</article>
+                </div>
+			</div>
+      
+        
+    </div>
+</div>
+</div>
+<div id="mboost-hwds" class="absolute" style="top: 105px;">
+<div id="mboost-ds1">
+ads 
+</div>
+<div id="mboost-ds2">
+<div id='play-unblocked-github-io_160x600'>
+		<script type="f1c29eb949e9ae4c01e32900-text/javascript">
+			aiptag.cmd.display.push(function() { aipDisplayTag.display('play-unblocked-github-io_160x600'); });
+		</script>
+	</div>
+</div>
+</div>
+
+			<script type="f1c29eb949e9ae4c01e32900-text/javascript">
+ 
+
+ 
+$('.full').click(function(){  
+    $('#gamewindow').toggleClass('fullscreen'); 
+    $('.cls').css('display','block'); 
+    $('.cls').addClass('cls-btn'); 
+    $('body').css('overflow','hidden'); 
+	
+	$('iframe').toggleClass('fullscreen'); 
+    $('embed').toggleClass('fullscreen'); 
+    $('object').toggleClass('fullscreen'); 
+});
+$('.cls').click(function(){  
+    $('#gamewindow').toggleClass('fullscreen'); 
+	$('iframe').toggleClass('fullscreen'); 
+    $('embed').toggleClass('fullscreen'); 
+    $('object').toggleClass('fullscreen'); 
+	 $('.cls').removeClass('cls-btn'); 
+	 $('.cls').css('display','none'); 
+	 $('body').css('overflow','auto'); 
+});
+</script>
+<style type="text/css"> 
+.fullscreen{
+    z-index: 9999; 
+    width: 100%!important; 
+    height: 100%!important; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+ }
+ .cls {
+	 display:none;
+	 cursor:pointer;
+ }
+.cls-btn {
+	position: absolute;
+    right: 5px;
+    top: 5px;
+    color: white;
+    padding: 6px 6px;
+    border-radius: 50%;
+    background: black;
+    z-index: 999999;
+    line-height: 0px;
+    font-size: 35px;
+}
+#gamewindow{ }
+</style>
+<script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js" data-cfasync="false"></script>
+<script type="f1c29eb949e9ae4c01e32900-text/javascript"> 
+	 
+ $(document).ready(function(){
+        $('.search-game').on("keyup input", function(){
+            var inputVal = $(this).val();
+            var resultDropdown = $(this).siblings(".game-results");
+            if(inputVal.length > 1){
+                $.get('https://lesson1.guru/i/search', {term: inputVal}).done(function(data){
+					
+                    resultDropdown.html(data);
+                });
+            }else{
+                resultDropdown.empty();
+            }
+        });
+        $(document).on("click", ".liveresult li", function(){
+            $(this).parents(".search-game").val($(this).text());
+            $(this).parent(".game-results").empty();
+        });
+    });
+	
+</script>
+<footer> 
+<div class="col-lg-12 text-center"> 
+	<a href="https://lesson1.guru"><img src="https://lesson1.guru/assets/images/logo.png" alt="" /></a>
+</div>
+<div class="col-lg-12 mt-5"> 
+<ul class="footer_list">
+	<li><a href="https://lesson1.guru/sitemap.xml" title="Sitemap">Sitemap</a></li>
+	<li><a href="https://lesson1.guru/rss.xml" title="Rss">Rss</a></li>
+	<li><a href="https://lesson1.guru/privacy-policy" title="Privacy">Privacy & Policy</a></li>
+	<li><a href="https://lesson1.guru/about-us" title="About Us">About Us</a></li>
+	<li><a href="https://lesson1.guru/contact" title="Contact">Contact</a></li>
+	<li><a href="https://github.com/2-retro-bowl/">retro bowl</a></li>
+    <li><a href="https://github.com/2-yo-ho-ho-unblocked/">yohoho</a></li>
+    <li><a href="https://www.symbaloo.com/mix/retro-bowl-unblocked-dswb" title="retro bowl">Retro bowl</a></li>
+  
+</ul>
+</div>
+
+</footer>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HSZB8X8KEC" type="f1c29eb949e9ae4c01e32900-text/javascript"></script>
+<script type="f1c29eb949e9ae4c01e32900-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HSZB8X8KEC');
+</script>
+
+   			
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="f1c29eb949e9ae4c01e32900-|49" defer></script></body>   
+
+ 
+</html>
